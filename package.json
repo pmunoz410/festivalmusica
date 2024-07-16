@@ -1,0 +1,27 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmunoz410/festivalmusica"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Paul Muñoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmunoz410/festivalmusica/issues"
+  },
+  "homepage": "https://github.com/pmunoz410/festivalmusica#readme",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
