@@ -334,7 +334,7 @@ p {
 
 .container {
   width: 95%;
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -369,4 +369,36 @@ img {
 
 body > section {
   padding: 10rem 0;
+}
+
+.header {
+  background-color: #008080;
+}
+@media (min-width: 480px) {
+  .header {
+    color: #FFFFFF;
+    width: 10px;
+    height: 1rem;
+  }
+}
+.header .content-header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.main-navegation {
+  display: flex;
+  gap: 2rem;
+}
+.main-navegation a {
+  color: #FFFFFF;
+}
+.main-navegation a:hover {
+  color: #fdda00;
 }

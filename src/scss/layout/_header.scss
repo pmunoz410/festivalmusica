@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    background-color: v.$green;
+
+    @include m.phone {
+        color: v.$white;
+        width: 10px;
+        height: 1rem;
+    }
+
+    .content-header {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        color: v.$white;
+        margin: 0;
+    }
+}
+
+.main-navegation {
+    display: flex;
+    gap: 2rem;
+    a {
+        color: v.$white;
+        &:hover {
+            color: v.$yellow;
+        }
+    }
+}
+

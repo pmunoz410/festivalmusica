@@ -1,13 +1,19 @@
 $main_font : "Montserrat", sans-serif;
 
 // $green:#4CB8B3;
-// $pink: #F53756;
-// $yellow: #fdda00;
-// $purple: #752F97;
+$pink: #F53756;
+$yellow: #fdda00;
+$purple: #752F97;
 $black: #000000;
 $white: #FFFFFF;
 
 $green:#008080;
-$pink: #C71585;
-$yellow: #C5A600;
-$purple: #752F97;
+// $pink: #C71585;
+// $yellow: #C5A600;
+// $purple: #752F97;
+
+// Media Queries
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+$desktopXL: 1400px;
