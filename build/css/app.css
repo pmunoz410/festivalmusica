@@ -353,11 +353,11 @@ h1 {
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
 }
 
 h3 {
-  font-size: 3.4rem;
+  font-size: 3.6rem;
   text-align: center;
 }
 
@@ -369,7 +369,7 @@ img {
 }
 
 body > section {
-  padding: 10rem 0;
+  padding: 9rem 0;
 }
 
 .header {
@@ -477,4 +477,159 @@ body > section {
 .container-festival .date {
   color: #39AAA6;
   font-weight: 700;
+}
+
+.lineup {
+  background-color: #F53756;
+  padding-bottom: 6rem;
+}
+.lineup h3, .lineup .day {
+  color: #FFFFFF;
+}
+.lineup .day {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+}
+
+.scenarios-container {
+  width: 80%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .scenarios-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.scenario {
+  padding-top: 1rem;
+}
+.scenario .name-scenario {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.5rem;
+}
+.calendar li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendar li span {
+  font-weight: 400;
+}
+
+.bg-yellow {
+  background-color: #fdda00;
+  margin-bottom: 6rem;
+}
+.bg-yellow li:nth-child(odd) {
+  background-color: #ffdf18;
+}
+
+.bg-green {
+  background-color: #39AAA6;
+  margin-bottom: 6rem;
+}
+.bg-green li:nth-child(odd) {
+  background-color: #3fbdb9;
+}
+
+.container-tickets {
+  background-color: #39AAA6;
+}
+.container-tickets h3 {
+  color: #FFFFFF;
+}
+.container-tickets .tickets {
+  width: 80%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container-tickets .tickets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pass {
+  transition: transform 0.3s ease-in-out;
+}
+.pass:hover {
+  transform: scale(1.1);
+}
+.pass-name {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #FFFFFF;
+}
+.pass-header, .pass-footer {
+  padding: 0.5rem;
+}
+.pass-header p, .pass-footer p {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pass-header {
+  background-color: #F53756;
+}
+.pass-header p {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+.pass-body {
+  background-color: #FFFFFF;
+}
+.pass-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pass-body ul li {
+  padding: 2rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pass-footer {
+  background-color: #FFFFFF;
+  padding: 3rem;
+}
+.pass-footer p {
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #752F97;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.pass-footer p:hover {
+  background-color: #391749;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #F53756;
+  padding: 2rem 0;
+}
+.footer p {
+  margin: 0;
+  text-align: center;
+  color: #FFFFFF;
 }

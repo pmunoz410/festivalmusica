@@ -1,0 +1,61 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup {
+    background-color: v.$pink;
+    padding-bottom: 6rem;
+    h3, .day {
+        color: v.$white;
+    }
+    .day {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.scenarios-container {
+    @include m.container;
+    @include m.tablet {
+        @include m.grid(2);
+    }
+}
+
+.scenario {
+    padding-top: 1rem;
+    .name-scenario {
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.calendar {
+    @include m.reset-list;
+    font-size: 1.5rem;
+    li {
+        padding: 2.5rem;
+        font-weight: 700;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.bg-yellow {
+    background-color: v.$yellow;
+    margin-bottom: 6rem;
+    li:nth-child(odd) {
+        background-color: lighten(v.$yellow, 5%);
+    }
+}
+
+.bg-green {
+    background-color: v.$green;
+    margin-bottom: 6rem;
+    li:nth-child(odd) {
+        background-color: lighten(v.$green, 5%);
+    }
+}
