@@ -4,6 +4,14 @@
 .header {
     background-color: v.$green;
 
+    @include m.tablet {
+        &.fixed {
+            position: fixed;
+            width: 100%;
+            box-shadow: 0.1rem 0.2rem 0.3rem #333;
+        }
+    }
+
     .content-header {
         padding: 2rem;
         @include m.tablet{
@@ -35,7 +43,8 @@
 
     a {
         color: v.$white;
-        &:hover {
+        &:hover,
+        &.active {
             color: v.$yellow;
         }
     }
