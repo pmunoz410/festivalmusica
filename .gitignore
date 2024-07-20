@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Dependency directories
+npm-debug.log
+yarn-error.log
+
+# Sass cache
+.sass-cache/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Vercel files
+.vercel/
