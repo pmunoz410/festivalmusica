@@ -4,6 +4,7 @@ node_modules/
 # Build directories
 dist/
 build/
+public/
 
 # Dependency directories
 npm-debug.log
