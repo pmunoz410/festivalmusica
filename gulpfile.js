@@ -1,4 +1,4 @@
-import { src, dest, watch, series } from 'gulp'
+import { src, dest, watch, series, parallel } from 'gulp'
 import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 
@@ -24,9 +24,10 @@ export function dev() {
     watch('src/js/**/*.js', js)
 }
 
-export function build() {
-    watch('src/scss/**/*.scss', css)
-    watch('src/js/**/*.js', js)
+export function build( done ) {
+    js(done);
+    css(done);
 }
 
-export default series( js, css, dev )
+// export default series( js, css, dev )
+export default series(parallel(js, css), dev);
