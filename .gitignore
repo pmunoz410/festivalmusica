@@ -29,6 +29,3 @@ Thumbs.db
 
 # Vercel files
 .vercel/
-
-# Configuración de Vercel
-vercel.json
