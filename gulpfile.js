@@ -24,4 +24,9 @@ export function dev() {
     watch('src/js/**/*.js', js)
 }
 
+export function build() {
+    watch('src/scss/**/*.scss', css)
+    watch('src/js/**/*.js', js)
+}
+
 export default series( js, css, dev )
