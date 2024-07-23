@@ -19,15 +19,23 @@ export function css( done ) {
     done()
 }
 
+export function html(done) {
+    src('index.html')
+        .pipe(dest('build'));
+    done();
+}
+
 export function dev() {
     watch('src/scss/**/*.scss', css)
     watch('src/js/**/*.js', js)
+    watch('index.html', html);
 }
 
 export function build( done ) {
     js(done);
     css(done);
+    html(done);
 }
 
 // export default series( js, css, dev )
-export default series(parallel(js, css), dev);
+export default series(parallel(js, css, html), dev);
