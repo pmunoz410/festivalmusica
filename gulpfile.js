@@ -1,6 +1,7 @@
 import { src, dest, watch, series, parallel } from 'gulp'
 import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass'
+import sourcemaps from 'gulp-sourcemaps'
 
 const sass = gulpSass(dartSass)
 
@@ -12,9 +13,16 @@ export function js( done ) {
 }
 
 export function css( done ) {
-    src('src/scss/app.scss', { sourcemaps: true })
-        .pipe( sass().on('error', sass.logError) )
-        .pipe( dest('build/css', { sourcemaps: true }) )
+    // src('src/scss/app.scss', { sourcemaps: true })
+    //     .pipe( sass().on('error', sass.logError) )
+    //     .pipe( dest('build/css', { sourcemaps: true }) )
+
+    // done()
+    src('src/scss/app.scss')
+        .pipe(sourcemaps.init()) // Inicia la generación del sourcemap
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write('.', { includeContent: false, sourceRoot: '.' })) // Escribe los sourcemaps en una carpeta separada
+        .pipe(dest('build/css'))
 
     done()
 }
