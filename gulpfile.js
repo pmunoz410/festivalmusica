@@ -18,7 +18,7 @@ export function css( done ) {
     //     .pipe( dest('build/css', { sourcemaps: true }) )
 
     // done()
-    src('src/scss/app.scss')
+    src('src/scss/app.scss', { sourcemaps: true })
         .pipe(sourcemaps.init()) // Inicia la generación del sourcemap
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('.', { includeContent: false, sourceRoot: '.' })) // Escribe los sourcemaps en una carpeta separada
