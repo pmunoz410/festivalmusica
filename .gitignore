@@ -3,6 +3,7 @@ node_modules/
 
 # Build directories
 dist/
+build/
 public/
 
 # Dependency directories
@@ -25,6 +26,3 @@ Thumbs.db
 # Editor directories and files
 .vscode/
 .idea/
-
-# Vercel files
-.vercel/
